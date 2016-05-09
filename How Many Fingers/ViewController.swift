@@ -10,6 +10,17 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet var userGuessTextField: UITextField!
+    
+    @IBOutlet var resultLabel: UILabel!
+
+    @IBAction func guess(sender: AnyObject) {
+    
+        let diceRoll = Int(arc4random_uniform(6))
+        
+        print(diceRoll)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
